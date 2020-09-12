@@ -22,7 +22,6 @@ with open('CHANGELOG.md') as history_file:
 install_requirements = [
     'coloredlogs',
     'PyYAML>=4.2b1',
-    'osmosis-driver-interface==0.0.6',
 ]
 
 # Required to run setup.py:
@@ -58,7 +57,7 @@ for d, _, _ in os.walk('osmosis_on_premise_driver'):
         packages.append(d.replace(os.path.sep, '.'))
 
 setup(
-    author="leucothia",
+    author="marcojrfurtado",
     author_email='devops@oceanprotocol.com',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
@@ -79,13 +78,13 @@ setup(
     long_description=readme,
     long_description_content_type="text/markdown",
     include_package_data=True,
-    keywords='osmosis-on-premise-driver',
-    name='osmosis-on-premise-driver',
+    keywords='osmosis-on-premise-driver-plus',
+    name='osmosis-on-premise-driver-plus',
     packages=packages,
     setup_requires=setup_requirements,
     test_suite='tests',
     tests_require=test_requirements,
-    url='https://github.com/oceanprotocol/osmosis-on-premise-driver',
+    url='https://github.com/marcojrfurtado/osmosis-on-premise-driver-plus',
     version='0.0.6',
     zip_safe=False,
 )
